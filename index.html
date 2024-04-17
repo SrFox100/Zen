@@ -5,14 +5,14 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <script>
-            var audio = new Audio("audio/chill.wav");
-            audio.loop = true;
-            window.addEventListener("load", function() {
-                audio.play();
-            });
+            autoplay = document.getElementById("autoplay")
+            autoplay.play()
         </script>
     </head>
     <body>
+        <audio id="autoplay">
+            <source src="audio/chill.wav" type="audio/wav">
+        </audio>
         <div class="opacnim">
             <h1>Hello, dear user</h1>
             <p>Welcome to Zen.</p>
